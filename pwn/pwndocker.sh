@@ -12,4 +12,8 @@ docker run -d \
 	--cap-add=SYS_PTRACE \
 	skysider/pwndocker
 
+# I would like gef not pwndbg plz
+docker exec ${ctf_name} sh -c "wget -O ~/.gdbinit-gef.py -q https://github.com/hugsy/gef/raw/master/gef.py"
+docker exec ${ctf_name} sh -c "sed -i 's/source \/pwndbg\/gdbinit.py/source ~\/.gdbinit-gef.py/g' ~/.gdbinit"
+
 docker exec -it ${ctf_name} /bin/bash
