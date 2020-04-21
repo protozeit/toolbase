@@ -1,5 +1,6 @@
 from sys import argv
 
+# see https://github.com/sagemath/sagelib/blob/master/sage/groups/generic.py for more information on the implementation
 assert len(argv[1:]) == 2
 [Px, Py] = list(map(Integer, argv[1:]))
 
