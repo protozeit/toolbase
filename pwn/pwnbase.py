@@ -47,6 +47,7 @@ def get_base(leak, symbol, lib=True):
     else: base = leak - binary.symbols[symbol]
     return base
 
+
 # points of interest (POI)
 gets = rebase(libc.symbols['gets'])
 gadget = rebase(one_gadgets(libc_so)[choice])
