@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+# assumes that it's being run from inside ~/ctf/ctfname/
 ctf_name=`basename $(pwd)`
 
 docker run -d \
