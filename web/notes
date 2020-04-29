@@ -1,0 +1,5 @@
+# web stuff to try
+
+* use this to understand CSP https://csp-evaluator.withgoogle.com/
+* use google XSS auditor to block some js
+* DOM clobbering 
