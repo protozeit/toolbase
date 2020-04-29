@@ -1,4 +1,6 @@
-# Swiped from Wikipedia
+''' English letter frequencies for frequency analysis
+Swiped from Wikipedia '''
+
 freq = {
     'E' : 12.0,
     'T' : 9.10,

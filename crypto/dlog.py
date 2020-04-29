@@ -1,5 +1,7 @@
 from Crypto.Util import number
 
+''' Discrete log stuff, sage might be a better alternative '''
+
 def isqrt(n):
     x = n
     y = (x + 1) // 2
@@ -28,7 +30,6 @@ class FastDlog(object):
 
     def dlog(self, y):
         ''' Compute x s.t. g^x === y mod p using baby step-giant step.
-    
         maxe is a bound on the maximum exponent to test (for unrestricted
         logarithms, set maxe = p-1).
 
@@ -53,7 +54,6 @@ def chinese_remainder(n, a):
 
     sum = 0
     prod = reduce(lambda a, b: a*b, n)
- 
     for n_i, a_i in zip(n, a):
         p = prod / n_i
         sum += a_i * number.inverse(p, n_i) * p

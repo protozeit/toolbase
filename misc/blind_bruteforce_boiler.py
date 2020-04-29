@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+''' This code is boiler plate for bruteforcing blind sql style vulnerabilities '''
 
 from string import ascii_letters, digits, punctuation
 

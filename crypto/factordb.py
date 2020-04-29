@@ -4,6 +4,7 @@ from Crypto.PublicKey import RSA
 import json
 import argparse
 
+''' python wrapper around factordb '''
 
 def check_args():
     parser = argparse.ArgumentParser(description='Factordb lookup tool')

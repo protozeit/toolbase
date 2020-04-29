@@ -1,5 +1,7 @@
 from struct import *
 
+''' boilerplate code for disassembly of a custom bytecode '''
+
 def db(v):
   return pack("<B", v)
 

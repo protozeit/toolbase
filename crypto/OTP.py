@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+''' example of how to exploit multiple uses of a one time pad on text '''
+
 from pwn import xor
 
 def updatep1(new_guess):

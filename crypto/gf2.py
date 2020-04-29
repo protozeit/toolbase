@@ -1,6 +1,9 @@
 import random
 import itertools
 
+''' GF(2) stuff, sage might be a better alternative '''
+
+
 def num2vec(x, w):
     return [int(c == '1') for c in '{:0{w}b}'.format(x, w=w)]
 

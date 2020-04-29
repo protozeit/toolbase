@@ -6,6 +6,7 @@ import sys
 import struct
 
 
+
 MAGICS = {
     20121: 'Python 1.5.x',
     50428: 'Python 1.6',

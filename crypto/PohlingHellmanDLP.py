@@ -1,6 +1,8 @@
 # coding: utf-8
 from math import sqrt, ceil
 
+''' DLP stuff, again sage might be better '''
+
 def PrimeFactorization(p):
     """Find all prime factors of the number p"""
     d, primeFactors = 2, []

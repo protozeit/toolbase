@@ -3,6 +3,7 @@
 import numpy as np
 import sys
 
+''' hill cipher utils '''
 
 def encrypt(msg, key):
     # Replace spaces with nothing

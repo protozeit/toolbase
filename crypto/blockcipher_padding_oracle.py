@@ -1,6 +1,8 @@
 from pwn import *
 import sys
 
+''' Unpolished example of simple AES oracle bug exploit '''
+
 r = remote('crypto.chal.csaw.io', 1003)
 
 blength = 0
@@ -14,7 +16,7 @@ print '###################################'
 print 'Calculating block length'
 print '  '
 for i in range(0,100):
-     r.sendline('a'*i) 
+     r.sendline('a'*i)
      r.recvline()
      a1 = r.recvline()
      r.sendline('a'*(i+1))

@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+''' Bruteforce zip files recursively using john '''
+
 cd dump/
 while true; do
 	for file in $(ls); do

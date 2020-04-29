@@ -1,6 +1,8 @@
 import os, sys
 from PIL import Image
 
+''' Hexahue solver '''
+
 class Color:
     """This class provides a color abstraction for each pixel in a valid hexahue image"""
     colors = []

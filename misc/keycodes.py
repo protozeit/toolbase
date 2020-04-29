@@ -1,3 +1,5 @@
+''' keycodes for keyboard usb packet RE '''
+
 modifiers = {
 	"LCTRL": 0x01,
 	"LSHIFT": 0x02,
@@ -183,7 +185,7 @@ keys = {
 }
 
 shifted = {
-        "1": "!",        
+        "1": "!",
         "2": "@",
         "3": "#",
         "4": "$",

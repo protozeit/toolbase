@@ -1,16 +1,17 @@
 #!/usr/bin/env python
 
+''' Dumps every plane of every channel of an image as a seperate png '''
+
 from PIL import Image
 from string import printable
 from itertools import groupby
 
-img = Image.open("spilled_milk.png")
+img = Image.open("image.png")
 
 def get_plane(img, channel, index=0):
     if channel in img.mode:
         new_image = Image.new('1', img.size)
         new_image_data = new_image.load()
-        
         img_data = img.load()
 
         channel_index = img.mode.index(channel)

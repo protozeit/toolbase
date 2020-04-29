@@ -2,6 +2,9 @@ from sage.all import *
 import fpylll
 import operator
 
+''' linear mod equation solver scripts, sage might be better '''
+
+
 def solve_linear_mod(equations, bounds):
     ''' Solve an arbitrary system of modular linear equations over different moduli.
 
