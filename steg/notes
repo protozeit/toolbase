@@ -1,0 +1,6 @@
+# Steg stuff to try
+
+* `strings -el`
+* load wav files as a raw img (rawpixels.net)
+* deepsound for audio files
+
